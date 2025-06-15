@@ -18,6 +18,7 @@ function App() {
     <Router>
       <Navbar/>      
       <MovieFilterBar/>
+    <h1><i>Smart recommendations. Seamless experience. Binge-worthy results.</i></h1>
       <Routes>
         <Route
           path="/"
