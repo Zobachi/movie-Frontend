@@ -1,13 +1,67 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+/* Global reset and base styles */
+
+
+/* Utility class for responsive containers */
+.container {
+  padding: 1rem;
+}
+
+/* Make images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* Small devices (default - mobile first) */
+.dropdown-container {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.MovieCard {
+  width: 100%;
+}
+.MovieCard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.Movie-Card:hover {
+  transform: scale(1.02);
+}
+
+
+/* Medium devices (≥ 768px) */
+@media (min-width: 768px) {
+  .dropdown-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .movie-card {
+    width: 48%;
+  }
+}
+
+/* Large devices (≥ 992px) */
+@media (min-width: 992px) {
+  .movie-card {
+    width: 23%;
+  }
 }
