@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'REACT_APP_API_URL', // Update to your backend URL if deployed
+  baseURL: 'https://movie-recommendation-app-backend-av0h.onrender.com', // Update to your backend URL if deployed
 });
 
 // Attach JWT token to all requests
